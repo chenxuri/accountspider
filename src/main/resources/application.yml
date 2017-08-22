@@ -1,0 +1,31 @@
+server:
+  port: 8088
+  context-path: "/account"
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/yeeton_account
+    username: root
+    password: 12345678
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+#  redis:
+#    database: 0
+#    host: 127.0.0.1
+#    port: 6379
+#    password:
+#    pool:
+#      max-active: 8
+#      max-wait: -1
+#      max-idle: 8
+#      min-idle: 0
+#    timeout: 0
+#  rabbitmq:
+#      host: 127.0.0.1
+#      username: guest
+#      password: 123456
+#      port: 5672
